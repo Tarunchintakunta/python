@@ -1,0 +1,230 @@
+                                                                  # variabels and datatypes
+
+print("there once was a man named john")
+print("he was 35 years old")
+print("he really liked the name john")
+print("but didnt like being 35")
+----------------------------------------
+OUTPUT :-
+there once was a man named john
+he was 35 years old
+he really liked the name john
+but didnt like being 35
+------------------------------------------
+
+character_name = "john"
+character_age = "35"
+print("there once was a man named "+character_name+ "")
+print("he was  "+character_age+ " years old")
+print("he really liked the name "+character_name+ "")
+print("but didnt like being "+character_age+ "")
+----------------------------------------
+OUTPUT :-
+there once was a man named john
+he was 35 years old
+he really liked the name john
+but didnt like being 35
+------------------------------------------
+
+character_name = "Tom"
+character_age = "50"
+print("there once was a man named "+character_name+ "")
+print("he was  "+character_age+ " years old")
+print("he really liked the name "+character_name+ "")
+print("but didnt like being "+character_age+ "")
+----------------------------------------
+OUTPUT :-
+there once was a man named Tom
+he was 50 years old
+he really liked the name Tom
+but didnt like being 50
+------------------------------------------
+
+
+                                                                                   #strings
+
+print("python \nprogramming")
+phrase = "Python_Programming"
+print(phrase)
+#concatenating a string
+print(phrase +" is cool")
+#coverting string to lower case
+print(phrase.lower())
+#coverting string to upper case
+print(phrase.upper())
+#len of string
+print(len(phrase))
+#index of a string
+print(phrase.index("g"))
+#replacing a string
+print(phrase.replace("Python","java"))
+
+----------------------------------------
+OUTPUT :-
+python 
+programming
+Python_Programming
+Python_Programming is cool
+python_programming
+PYTHON_PROGRAMMING
+18
+0
+java_Programming
+-------------------------------------------
+
+                                                                                 #input from users
+
+name = input("enter your name : ")
+age = input("enter your age : ")
+print("hello " +name+"!")
+print("Your age is  " +age)
+
+----------------------------------------
+OUTPUT :-
+enter your name : tarun
+enter your age : 18
+hello tarun!
+Your age is  18
+--------------------------------------
+                                                                               #building a basic calculator
+
+num1 = float(input("Enter a number : "))
+num2 = float(input("Enter a another number : "))
+result = num1+num2
+print(result)
+
+----------------------------------------
+OUTPUT :-
+Enter a number : 5
+Enter a another number : 6
+11.0
+------------------------------------------
+                                                                                         #mad libs
+
+color = input("Enter a color : ")
+plural_noun = input("Enter a plural noun : ")
+celebrity = input("Enter a celebrity : ")
+print("Roses are " + color)
+print(plural_noun + " are blue")
+print("I love " + celebrity)
+
+----------------------------------------
+OUTPUT :-
+Enter a color : red
+Enter a plural_noun : blue
+Enter a celebrity : tom hallond
+Roses are red
+blue are blue
+I love tom hallond
+-------------------------------------
+                                                                                     #list functions
+                                                                                     
+frnds = ["ram","raj","krish","jay"]
+print(frnds)
+print(frnds[1])
+print(frnds[1:])
+print(frnds[1:3])
+frnds.remove("ram")
+frnds.insert(1,"rajesh")
+print(frnds)
+----------------------------------------
+OUTPUT :-
+
+['ram', 'raj', 'krish', 'jay']
+raj
+['raj', 'krish', 'jay']
+['raj', 'krish']
+['raj', 'rajesh', 'krish', 'jay']
+
+-------------------------------------
+                                                                                          #tuple
+tuple = (1,2,3,4,5,6)
+print(tuple)
+
+----------------------------------------
+OUTPUT :-
+(1, 2, 3, 4, 5, 6)
+------------------------------------------
+                                                                                         #function
+                                                                                        
+def say_hi(name,age):
+    print("hello " + name + ",you are " +age)
+
+say_hi("Mike","35")
+say_hi("tom","50")
+----------------------------------------
+OUTPUT :-
+hello Mike,you are 35
+hello tom,you are 50
+----------------------------------------------
+                                                                                 #return statement
+def cube(num):
+    return num*num*num
+print(cube(3))
+
+----------------------------------------
+OUTPUT :-
+27
+----------------------------------------
+                                                                             #building a better calculator
+num1 = float(input("enter first number:"))
+op = input("enter operator:")
+num2 = float(input("enter second number:"))
+if op == "+":
+    print(num1 + num2)
+elif op =="-":
+    print(num1 - num2)
+elif op =="/":
+    print(num1 / num2)
+elif op =="*":
+    print(num1 * num2)
+else:
+    print("invalid operator")
+
+----------------------------------------
+OUTPUT :-
+enter first number:5
+enter operator:*
+enter second number:6
+30.0
+----------------------------------------
+                                                                                   #dictionaries
+monthconversions = {
+    "jan":"january",
+    "feb":"february",
+    "mar":"march",
+    "apr":"april",
+    "may":"may",
+    "jun":"june",
+    "jul":"july",
+    "aug":"august",
+    "sep":"september",
+    "oct":"october",
+    "nov":"november",
+    "dec":"december"
+    }
+print(monthconversions["nov"])
+
+----------------------------------------
+OUTPUT :-
+november
+----------------------------------------
+
+                                                                                        #while loop
+i=1
+while i<=10:
+    print(i)
+    i +=1
+
+----------------------------------------
+OUTPUT :-
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
