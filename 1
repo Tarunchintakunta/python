@@ -228,3 +228,57 @@ OUTPUT :-
 8
 9
 10
+
+                                                                                   #building a guess game
+secret_word ="python"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = False
+while guess != secret_word and not(out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter guess: ")
+        guess_count +=1
+
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("out of guesses,You Lose")
+else:
+    print("You win!!")
+
+----------------------------------------
+OUTPUT :-
+Enter guess: tarun
+Enter guess: manasa
+Enter guess: python
+You win!!
+-----------------------------------------
+
+----------------------------------------
+OUTPUT :-
+Enter guess: atawedf
+Enter guess: dfaed
+Enter guess: dfasdf
+out of guesses,You Lose
+------------------------------------------
+
+                                                                                 #for loop
+frnds = ["ram","raj","krish"]
+
+for index in range(5):
+    if index ==0:
+        print("first iteration")
+    else:
+        print("not first")
+
+----------------------------------------
+OUTPUT :-
+ first iteration
+not first
+not first
+not first
+not first
+
+------------------------------------------ 
